@@ -9,7 +9,7 @@ PORT = 35567  # The port used by the server
 def send_message(s):
     while True:
         message = input(">> ")
-        message = f"{message}||10.100.0.83:5556"
+        message = f"{message}||{HOST}:35580"
         s.send(message.encode('utf8'))
 
 def receive_message(s):
